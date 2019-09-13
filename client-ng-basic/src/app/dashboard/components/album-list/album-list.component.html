@@ -1,0 +1,3 @@
+<gl-album *ngFor="let album of albums" [album]="album"
+	(click)="albumClicked(album)" [class.selected]="album === albumSelected"
+></gl-album>

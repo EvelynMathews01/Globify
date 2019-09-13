@@ -1,0 +1,19 @@
+@import './../../../variables.scss';
+
+.toolbar__search {
+  width: 100%;
+  text-align: center;
+  margin-right: 40px;
+
+  &__input {
+    width: 280px;
+    height: 45px;
+    background: url("./../../../assets/img/search.png") no-repeat scroll 14px 11px;
+    border: 1px solid #f37037;
+    border-radius: 23px;
+    color: $text-color;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    padding-left: 50px;
+  }
+}

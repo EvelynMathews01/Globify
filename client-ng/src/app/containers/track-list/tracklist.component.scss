@@ -1,0 +1,10 @@
+@import './../../../variables.scss';
+
+.playlist {
+  width: 100%;
+  background-color: $background-hover;
+  box-sizing: border-box;
+  color: $text-color;
+  list-style: none;
+  // display: none;
+}

@@ -1,0 +1,32 @@
+@import "./../../../variables.scss";
+
+:host {
+  display: flex;
+  .navbar {
+    width: 15vw;
+    margin-left: 21px;
+    position: sticky;
+    left: 0;
+    @media screen and (max-width: $mobile-420) {
+      display: none;
+    }
+  }
+  .sidebar__button {
+    width: 1.3vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $background-hover;
+
+    @media screen and (max-width: $mobile-420) {
+      display: none;
+    }
+
+    &__img {
+      width: 100%;
+      max-width: 15px;
+      cursor: pointer;
+    }
+  }
+}

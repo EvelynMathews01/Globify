@@ -1,0 +1,8 @@
+<h2>Artist:</h2>
+<div *ngIf="artist">
+	<div>artist_id: <b>{{artist.id}}</b></div>
+	<div>Name: <a routerLink="./artists/{{artist.id}}"><b>{{artist.name}}</b></a> (<a
+		routerLink="/artists/{{artist.id}}">Fanpage</a>)
+	</div>
+	<div><img [src]="artist.image" alt="" width="150"></div>
+</div>

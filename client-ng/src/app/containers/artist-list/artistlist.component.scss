@@ -1,0 +1,31 @@
+@import './../../../variables.scss';
+
+:host {
+	width: 60vw;
+	height: 100vh;
+	background-color: $dark-grey;
+	overflow: scroll;
+	overflow-x: hidden;
+
+	@media screen and (max-width: $mobile-420) {
+		width: 100%;
+  }
+	.title {
+    width: 100%;
+		font-size: 50px;
+		font-weight: 500;
+		margin-left: 13px;
+		margin-bottom: 40px;
+
+		@media screen and (max-width: $mobile-420) {
+			display: none;
+		}
+  }
+  .playlist {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		flex-flow: wrap;
+    list-style: none;
+  }
+}

@@ -1,0 +1,13 @@
+<gl-sidebar></gl-sidebar>
+<gl-artist-list
+(onArtistSelected) = "onArtistSelected($event)">
+</gl-artist-list> 
+<gl-albumlist *ngIf="artistSelected"
+[artistReceived]="artistSelected"
+(onAlbumSelected)="onAlbumSelected($event)">
+</gl-albumlist>
+<gl-tracklist
+*ngIf="albumSelected" 
+[albumReceived]="albumSelected"
+(onAlbumSelected)="onAlbumSelected($event)">
+</gl-tracklist>

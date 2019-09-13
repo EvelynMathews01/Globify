@@ -1,0 +1,8 @@
+<gl-header></gl-header>
+<h2 class="title">Artistas</h2>
+<div class="playlist">
+  <gl-artist-box *ngFor="let artist of artists"
+    [artist]="artist"
+    (click)="artistClicked(artist)">
+  </gl-artist-box>
+</div>

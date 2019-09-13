@@ -1,0 +1,7 @@
+<h2 class="title">Álbumes</h2>
+<div class="list">
+  <gl-album *ngFor="let album of albums" 
+  [album]="album"
+  (click)="albumClicked(album)">
+</gl-album>
+</div>

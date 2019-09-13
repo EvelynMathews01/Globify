@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<title>Globifly</title>
+</head>
+<body>
+<div id="loading" class="loading">
+	<i class="material-icons">donut_large</i>
+</div>
+<div id="content">
+	<nav class="desktop-nav open" id="menu">
+		<div class="profile">
+			<div class="thumb-box">
+				<img src="./assets/img/thumbnail.jpg" alt="profile-photo" id="profile-image">
+			</div>
+			<p id="profile-name"></p>
+		</div>
+		<div class="menu-title">
+			<h5>Explorar</h5>
+			<h4>Tu biblioteca</h4>
+		</div>
+		<a href="#" class="active">Artistas</a>
+		<a href="#">Playlist</a>
+		<a href="#">Videos</a>
+		<a href="#">Escuchado recientemente</a>
+	</nav>
+	<div class="slide-toogle-btn" id="arrow">
+		<i class="material-icons">keyboard_arrow_left</i>
+	</div>
+	<section class="artists" id="artist">
+		<div class="header">
+			<nav class="menu-top-mobile">
+				<a href="#" class="active">Artistas</a>
+				<a href="#">Recientemente</a>
+				<a href="#">Playlist</a>
+			</nav>
+			<div class="search-nav">
+				<div class="gl-logo">
+					<img src="./assets/img/GlobalLogic-Logo-White.png" alt="GL-logo">
+				</div>
+				<div class="search-box">
+					<div class="search-input">
+						<i class="material-icons">search</i>
+						<input type="text" placeholder="Buscar" id="search"/>
+					</div>
+				</div>
+			</div>
+			<h1>Artistas</h1>
+		</div>
+		<div class="grid mobile" id="artists-list">
+		</div>
+		<section class="artists mobile">
+			<header class="header">
+				<div class="arrow-back">
+					<i class="material-icons">keyboard_arrow_left</i>
+				</div>
+				<div class="title">
+					<h4 id="artist-title"></h4>
+					<span>Álbumes</span>
+				</div>
+			</header>
+			<div class="grid mobile" id="albums">
+			</div>
+		</section>
+		<nav class="menu-bottom-mobile">
+			<a href="#">
+				<i class="material-icons">home</i>
+				<span>Inicio</span>
+			</a>
+			<a href="#">
+				<i class="material-icons">search</i>
+				<span>Buscar</span>
+			</a>
+			<a href="#" class="active">
+				<i class="material-icons">library_music</i>
+				<span>Tu biblioteca</span>
+			</a>
+			<a href="#">
+				<img src="./assets/img/thumbnail.jpg" alt="thumbnail" width="24"/>
+				<span>Perfil</span>
+			</a>
+		</nav>
+
+		<section class="songs mobile">
+			<header class="header">
+				<div class="arrow-back">
+					<i class="material-icons">keyboard_arrow_left</i>
+				</div>
+				<div class="title">
+					<h4 id="album-title"></h4>
+					<span>Canciones</span>
+				</div>
+			</header>
+			<ul class="song-list" id="song-list"></ul>
+			<div class="player">
+				<div class="title">
+					<h4>Song Name</h4>
+					<span>álbum</span>
+				</div>
+
+				<div class="timeline"></div>
+				<div>
+					<span>0:44</span>
+					<span>4:23</span>
+				</div>
+				<div class="controllers">
+					<i class="material-icons">repeat</i>
+					<i class="material-icons">skip_previous</i>
+					<i class="material-icons play-btn">pause</i>
+					<i class="material-icons">skip_next</i>
+					<i class="material-icons">shuffle</i>
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<section class="albums">
+		<div class="header">
+			<h1>Álbumes</h1>
+		</div>
+		<div class="scroll" id="albums-list-desktop">
+			<span>Selecciona un artista</span>
+		</div>
+
+	</section>
+</div>
+
+</body>
+</html>

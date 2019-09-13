@@ -1,0 +1,6 @@
+<h1>Dashboar page</h1>
+<gl-title></gl-title>
+<gl-profile></gl-profile>
+<gl-artist-list (onArtistSelected)="onArtistSelected($event)"></gl-artist-list>
+<gl-album-list *ngIf="artistSelected" [artist]="artistSelected" (onAlbumSelected)="onAlbumSelected($event)"></gl-album-list>
+<gl-track-list *ngIf="albumSelected" [album]="albumSelected"></gl-track-list>

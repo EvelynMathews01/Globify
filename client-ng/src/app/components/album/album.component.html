@@ -1,0 +1,9 @@
+
+  <div class="wrapper">
+    <div class="wrapper__info" (click)="setFlag()">
+      <img class="wrapper__info__img"
+      [src]="album.img"alt="" />
+      <p class="wrapper__info__title">{{album.name}}</p>
+    </div>
+    <gl-tracklist *ngIf="statusFlag"></gl-tracklist>
+  </div>

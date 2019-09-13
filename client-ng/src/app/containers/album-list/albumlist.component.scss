@@ -1,0 +1,30 @@
+@import './../../../variables.scss';
+
+:host {
+  width: 23vw;
+	background-color: $background-hover;
+	@media screen and (max-width: $mobile-420) {
+		width: 100%;
+  }
+  .title{
+    width: 100%;
+    margin: 100px auto;
+    font-size: 50px;
+		font-weight: 500;
+		margin-left: 24px;
+		margin-bottom: 50px;
+
+		@media screen and (max-width: $mobile-420) {
+			font-size: 22px;
+			text-align: center;
+			margin: 0;
+		}
+  }
+  .list{
+    width: 100%;
+    box-sizing: border-box;
+    list-style: none;
+    margin: auto;
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,22 @@
+.user {
+  max-width: 10vw;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 33px 0 54px;
+
+  &__img {
+    width: 100%;
+    max-width: 62px;
+    max-height: 62px;
+    border-radius: 30px;
+  }
+
+  &__name {
+    font-size: 15px;
+
+    &--wrap {
+      display: block;
+    }
+  }
+}

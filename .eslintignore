@@ -1,0 +1,4 @@
+# general
+server/index*.js
+server-mock/index.js
+server-validations/index.js

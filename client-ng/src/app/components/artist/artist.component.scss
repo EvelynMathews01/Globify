@@ -1,0 +1,52 @@
+@import './../../../variables.scss';
+
+:host {
+  width: 30%;
+  margin-top: 43px;
+  text-align: center;
+  list-style: none;
+
+  // @media screen and (max-width: $mobile-420) {
+  //   margin: 10px 0 43px 0;
+  // }
+
+  .img {
+    width: 150px;
+    height: 150px;
+    border-radius: 90px;
+
+    // @media screen and (max-width: $mobile-420) {
+    //   width: 100px;
+    // }
+  }
+
+  .name {
+    font-size: 19px;
+    margin-top: 20px;
+
+    // @media screen and (max-width: $mobile-420) {
+    //   font-size: 11px;
+    //   font-weight: 500;
+    // }
+  }
+
+  &__album {
+    font-size: 17px;
+    margin-top: 8px;
+
+    @media screen and (max-width: $mobile-420) {
+      display: none;
+    }
+  }
+
+  // &--selected{
+  // 	background-color: $background-hover;
+  // 	box-sizing: border-box;
+  // 	border-radius: 20px;
+  // 	color: #f37037;
+  // 	padding: 20px 15px;
+  // 	@media screen and (max-width: $mobile-420){
+  // 		background-color: $dark-grey;
+  // 	}
+  // }
+}
